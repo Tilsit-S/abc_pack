@@ -1,12 +1,72 @@
+.header {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 148px;
+    }
+
+    &__feedback-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__site-title {
+        font-weight: 700;
+        position: relative;
+        width: 463px;
+        padding-left: 160px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("../img/header/logo.svg");
+            background-size: contain;
+            width: 148px;
+            height: 54px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__phone {
+        font-weight: 700;
+    }
+
+    &__call-button {
+        position: relative;
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-weight: 700;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/header/phone.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__basket-button {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .header__navigation {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
-}
-
-.navigation__logo {
-    margin-right: 32px;
 }
 
 .navigation__list {
