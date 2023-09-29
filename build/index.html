@@ -10,15 +10,24 @@
 </head>
 <body>
     <header class="page-header header">
-        <div class="header__wrapper container">
-            <div class="header__feedback-block">
-                <p class="header__site-title">Производитель гибкой упаковки и картонных тубусов</p>
-                <a href="tel:+7 (499) 938 91 70" class="header__phone">+7 (499) 938 91 70</a>
-                <button type="button" class="header__call-button">Заказать звонок</button>
-                <a href="#" class="header__mail-link">zakaz@abcpack.ru</a>
-                <button type="button" class="header__basket-button"></button>
+        <div class="header__feedback-block feedback-block">
+            <button class="feedback-block__button burger-btn">
+                <img src="../img/header/burger.svg" width="27" height="27" alt="menu button">
+            </button>
+            <div class="feedback-block__wrapper">
+                <div class="feedback-block__site-title">
+                    <img src="../img/header/logo.svg" alt="abc_pack-image" width="148" height="54">
+                    <p>Производитель гибкой упаковки и картонных тубусов</p>
+                </div>
+                <a href="tel:+7 (499) 938 91 70" class="feedback-block__phone">+7 (499) 938 91 70</a>
+                <button type="button" class="feedback-block__call-button">Заказать звонок</button>
+                <a href="#" class="feedback-block__mail-link">zakaz@abcpack.ru</a>
+                <a class="feedback-block__basket-link">0</a>
             </div>
-            <div class="header__navigation navigation">
+        </div>
+
+        <div class="header__navigation navigation">
+            <div class="navigation__wrapper">
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a href="#">Магазин упаковки</a>
@@ -35,6 +44,33 @@
                 </ul>
             </div>
         </div>
+
+        <div class="navigation__pop-up pop-up">
+            <div class="pop-up__wrapper">
+                <button class="pop-up__burger-button-close burger-btn-close"></button>
+                <ul class="pop-up__list">
+                    <li class="pop-up__item">
+                        <a href="tel:+7 (499) 938 91 70" class="pop-up__item-link link">+7 (499) 938 91 70</a>
+                    </li>
+                    <li class="pop-up__item">
+                        <a href="#" class="pop-up__item-link link">zakaz@abcpack.ru</a>
+                    </li>
+                    <li class="pop-up__item">
+                        <a class="pop-up__item-link link" href="#">Магазин упаковки</a>
+                    </li>
+                    <li class="pop-up__item">
+                        <a class="pop-up__item-link link" href="#">Производство упаковки</a>
+                    </li>
+                    <li class="pop-up__item">
+                        <a class="pop-up__item-link link" href="#">Наши услуги</a>
+                    </li>
+                    <li class="pop-up__item">
+                        <a class="pop-up__item-link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </header>
     <main class="page-main main">
         <section class="main__launch launch">
@@ -50,6 +86,6 @@
             </div>
         </section>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/burgerMenu.js" type="module"></script>
 </body>
 </html>
