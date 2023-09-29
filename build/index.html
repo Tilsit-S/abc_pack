@@ -72,13 +72,58 @@
         </div>
 
     </header>
+
     <main class="page-main main">
-        <section class="main__launch launch">
-            <div class="launch__wrapper container">
-                
+
+        <section class="main__trading-blok trading-block">
+            <div class="trading-block__wrapper container">
+
+                <div class="container">
+                    <ul id="slides">
+
+                      <li class="slide showing">
+                        <div class="trading-block__slider-item slider-item">
+                            <div class="slider-item__wrapper">
+                                <div class="slider-item__description-wrapper">
+                                    <h2 class="slider-item__title">Производитель тубусов и гибкой упаковки</h2>
+                                    <p class="slider-item__description">Оставьте заявку, и мы подберём для вас стандартное решение или поможем реализовать вашу идею.</p>
+                                    <div class="slider-item__button-wrapper">
+                                        <button type="button" class="slider-item__stock-button">Упаковка в наличии</button>
+                                        <a href="#" class="slider-item__contact-button">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+
+                      <li class="slide">
+                        <div class="trading-block__slider-item slider-item">
+                            <div class="slider-item__wrapper">
+                                <div class="slider-item__description-wrapper">
+                                    <h2 class="slider-item__title">Высокотехнологичное производство</h2>
+                                    <div class="slider-item__button-wrapper">
+                                        <a class="slider-item__stock-button">Подробнее о нас</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                    <div class="buttons">
+                      <button class="controls" id="previous">&lt;</button>
+                  
+                      <button class="controls" id="pause">&#10074;&#10074;</button>
+                  
+                      <button class="controls" id="next">&gt;</button>
+                    </div>
+                </div>
+
             </div>
         </section>
+
     </main>
+
     <footer class="page-footer footer">
         <section class="footer__feedback feedback">
             <div class="feedback__wrapper container">
@@ -87,5 +132,6 @@
         </section>
     </footer>
     <script src="js/burgerMenu.js" type="module"></script>
+    <script src="js/tradingSlider.js" type="module"></script>
 </body>
 </html>
