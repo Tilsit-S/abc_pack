@@ -5,7 +5,7 @@ for(var i=0; i<controls.length; i++){
 
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+var slideInterval = setInterval(nextSlide,8000);
 
 function nextSlide(){
   goToSlide(currentSlide+1);
@@ -34,7 +34,7 @@ function pauseSlideshow(){
 function playSlideshow(){
   pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
   playing = true;
-  slideInterval = setInterval(nextSlide,2000);
+  slideInterval = setInterval(nextSlide,8000);
 }
 
 pauseButton.onclick = function(){

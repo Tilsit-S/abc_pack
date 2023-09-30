@@ -119,13 +119,26 @@
   .controls{
     display: none;
   }
+
+  #previous {
+    position: absolute;
+    top: 215px;
+    left: -25px;
+    z-index: 4;
+  }
+
+  #next {
+    position: absolute;
+    top: 215px;
+    right: -25px;
+    z-index: 4;
+  }
   
   
   .slide{
     font-size: 40px;
     padding: 40px;
     box-sizing: border-box;
-    background: #333;
     color: #fff;
     background-size: cover;
   }
@@ -153,12 +166,4 @@
   .container{
     position: relative;
     width: 700px;
-  }
-  
-  .buttons{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 10;
-    font-size: 0px;
   }
