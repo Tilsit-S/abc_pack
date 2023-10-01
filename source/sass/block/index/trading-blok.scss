@@ -1,5 +1,4 @@
 .trading-block {
-    background-color: #F75241;
 
     .container {
         width: 100%;
@@ -7,38 +6,43 @@
 
     &__wrapper {
         width: 1624px;
-        padding: 84px 0 97px 0;
         margin: 0 auto;
     }
 
-    .slider-item {
+    .slider-item-1 {
+
+      &__wrapper {
+        width: 100%;
+        background-color: #F75241;
+      }
 
         &__description-wrapper {
             position: relative;
             display: flex;
             flex-direction: column;
             width: 1170px;
+            padding: 158px 0 0 148px;
 
             &::after {
                 position: absolute;
                 content: "";
                 background-image: url("../img/main/Package.png");
                 background-size: contain;
-                top: 10px;
-                right: -480px;
+                top: 190px;
+                right: 115px;
                 width: 660px;
                 height: 456px;
             }
         }
 
         &__title {
-            font-size: 80px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-            text-transform: uppercase;
-            color: #FFF;
-            margin-bottom: 24px;
+          font-size: 80px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+          text-transform: uppercase;
+          color: #FFF;
+          margin-bottom: 24px;
         }
 
         &__description {
@@ -68,6 +72,7 @@
             padding: 14px 40px;
             border-radius: 32px;
             border: 3px solid #FFF;
+            cursor: pointer;
         }
 
         &__contact-button {
@@ -82,88 +87,75 @@
             border: 3px solid $white;
         }
     }
-}
 
+    .slider-item-2 {
+      height: 100%;
+      background-image: url("../img/main/slide-2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
 
-  /*-----------------------------slide--------------------------------*/
+      &__description-wrapper {
+        padding: 158px 0 0 148px;
+      }
 
-#slides{
-    position: relative;
-    height: 587px;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-  }
-  
-  .slide{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-  
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-  }
-  
-  .showing{
-    opacity: 1;
-    z-index: 2;
-  }
-  
-  
-  .controls{
-    display: none;
-  }
+      &__title {
+        width: 1430px;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 54px;
+      }
 
-  #previous {
-    position: absolute;
-    top: 215px;
-    left: -25px;
-    z-index: 4;
-  }
+      &__stock-button {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $white;
+        background-color: transparent;
+        padding: 14px 40px;
+        border-radius: 32px;
+        border: 3px solid #FFF;
+        cursor: pointer;
+    }
+    }
 
-  #next {
-    position: absolute;
-    top: 215px;
-    right: -25px;
-    z-index: 4;
-  }
-  
-  
-  .slide{
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    color: #fff;
-    background-size: cover;
-  }
+    /*-------------------slider-------------------*/
 
-  .slide:nth-child(2)::after {
-    background-image: none;
-  }
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
     
-  .controls{
-    background: transparent;
-    color: #fff;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 10px;
-    width: 70px;
-  }
-  
-  .controls:hover,
-  .controls:focus{
-    background: #eee;
-    color: #333;
-  }
-  
-  .container{
-    position: relative;
-    width: 700px;
-  }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .prev-button,
+    .next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+    }
+    
+    .prev-button {
+      left: 10px;
+    }
+    
+    .next-button {
+      right: 10px;
+    }
+
+}
