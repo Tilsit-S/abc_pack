@@ -7,9 +7,10 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 1020px;
-            height: 110px;
+            width: 840px;
+            height: 87px;
             margin: 0 auto;
+            padding-top: 7px;
         }
 
         &__burger-btn {
@@ -27,11 +28,19 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 425px;
+            width: 350px;
             margin: 0;
 
+            img {
+                width: 150px;
+                height: 55px;
+            }
+
             p {
-                width: 265px;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -1px;
+                width: 200px;
             }
         }
 

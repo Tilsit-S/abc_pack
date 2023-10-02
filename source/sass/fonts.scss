@@ -1,7 +1,16 @@
 @font-face {
     font-family: "MuseoCyrl";
+    src: local("MuseoCyrl-ExtraBold"),
+        url("../fonts/MuseoCyrl900.woff2") format("woff2");
+    font-weight: 900;
+    font-style: extra-bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MuseoCyrl";
     src: local("MuseoCyrl-Bold"),
-        url("../fonts/MuseoCyrl700.woff") format("woff");
+        url("../fonts/MuseoCyrl700.woff2") format("woff2");
     font-weight: 700;
     font-style: bold;
     font-display: swap;
@@ -10,7 +19,7 @@
 @font-face {
     font-family: "MuseoCyrl";
     src: local("MuseoCyrl-Medium"),
-        url("../fonts/MuseoCyrl500.woff") format("woff");
+        url("../fonts/MuseoCyrl500.woff2") format("woff2");
     font-weight: 500;
     font-style: regular;
     font-display: swap;
@@ -19,7 +28,7 @@
 @font-face {
     font-family: "MuseoCyrl";
     src: local("MuseoCyrl-Regular"),
-        url("../fonts/MuseoCyrl300.woff") format("woff");
+        url("../fonts/MuseoCyrl300.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
