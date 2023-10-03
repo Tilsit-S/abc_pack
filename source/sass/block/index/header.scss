@@ -1,14 +1,15 @@
 .header {
     .feedback-block {
-        font-weight: 700;
+        padding: 27px 0;
+        font-weight: 900;
 
         &__wrapper {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 1020px;
-            height: 110px;
+            width: 1029px;
+            height: 55px;
             margin: 0 auto;
         }
 
@@ -27,11 +28,20 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 425px;
+            align-items: center;
+            width: 470px;
             margin: 0;
 
+            img {
+                width: 150px;
+                height: 55px;
+            }
+
             p {
-                width: 265px;
+                font-size: 17px;
+                line-height: 19px;
+                width: 296px;
+                padding-top: 10px;
             }
         }
 
@@ -106,7 +116,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 802px;
+            width: 856px;
 
             @media (max-width: 1000px) {
                 width: 600px;
@@ -119,7 +129,7 @@
         }
         
         &__item a {
-            font-size: 18px;
+            font-size: 13px;
             line-height: 24px;
             color: $white;
 

@@ -41,17 +41,19 @@
   }
   
   .prev-button {
-    left: 10px;
+    left: -5px;
+    top: 268px;
   }
   
   .next-button {
-    right: 70px;
+    right: 39px;
+    top: 268px;
   }
 
   /*----------------slide-1------------------*/
 
   .slider-item-1 {
-    width: 1920px;
+    width: 100%;
     height: 100%;
     padding: 0 148px;
     background-color: #F75241;
@@ -65,28 +67,28 @@
         display: flex;
         flex-direction: column;
         width: 1170px;
-        padding: 84px 0 0 0;
+        padding: 81px 0 0 0;
 
         &::after {
             position: absolute;
             content: "";
             background-image: url("../img/main/Package.png");
             background-size: contain;
-            top: 106px;
-            right: -480px;
-            width: 660px;
-            height: 456px;
+            top: 87px;
+            right: -543px;
+            width: 702px;
+            height: 500px;
         }
       }
 
       &__title {
         font-size: 80px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 120%;
         text-transform: uppercase;
         color: #FFF;
-        margin-bottom: 24px;
+        margin-bottom: 26px;
       }
 
       &__description {
@@ -96,7 +98,7 @@
           font-style: normal;
           font-weight: 400;
           line-height: 150%;
-          margin-bottom: 40px;
+          margin: 0 0 45px 0;
       }
 
       &__button-wrapper {
@@ -112,7 +114,7 @@
           line-height: normal;
           color: $white;
           background-color: transparent;
-          padding: 14px 40px;
+          padding: 11px 37px;
           border-radius: 32px;
           border: 3px solid #FFF;
           cursor: pointer;
@@ -125,7 +127,7 @@
           line-height: normal;
           color: #F75241;
           background-color: $white;
-          padding: 14px 40px;
+          padding: 11px 45px;
           border-radius: 32px;
           border: 3px solid $white;
       }
@@ -149,7 +151,7 @@
       width: 1430px;
       font-size: 80px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 900;
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 54px;
