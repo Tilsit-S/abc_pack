@@ -1,3 +1,78 @@
+.business {
+    .container {
+        padding: 0 142px 0 148px;
+    }
+
+    .product {
+        &__wrapper {
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 60px 0 50px 0;
+        }
+
+        &__title {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 42px;
+            margin-bottom: 12px;
+        }
+
+        &__description {
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 42px;
+        }
+
+        .industry-slider {
+            .slider-list {
+                width: 1690px;
+
+                .slide {
+                    border: none;
+                    .slide-card {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 400px;
+                        border: none;
+                        border-radius: 14px;
+                        line-height: 0;
+            
+                        &__description {
+                            text-align: center;
+                            background-color: #F5F9FC;
+                            padding: 8px 25px 0px 25px;
+                        }
+        
+                        &__name {
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            color: rgba(239, 60, 21, 0.82);
+                        }
+
+                        &__name-description {
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 22px;
+                            margin-bottom: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
   }
@@ -19,8 +94,8 @@
   }
   
   .slider-list {
-    width: 500px;
-    height: 200px;
+    width: 1690px;
+    height: 100%;
     overflow: hidden;
   }
   
@@ -37,8 +112,8 @@
   }
   
   .slide {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 100%;
     flex-shrink: 0;
     font-size: 50px;
     display: flex;

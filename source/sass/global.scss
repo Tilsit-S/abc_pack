@@ -17,6 +17,7 @@ body {
     min-width: 360px;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    background-color: #fff;
 
     &.no-scroll {
         overflow: hidden;
@@ -32,6 +33,10 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $black;
+}
+
+p {
+    margin: 0;
 }
 
 h1,

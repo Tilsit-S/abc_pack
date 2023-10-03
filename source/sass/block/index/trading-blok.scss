@@ -20,8 +20,12 @@
     margin: 0 auto;
     overflow: hidden;
   }
+
+  .slider-item {
+    margin: 0 auto;
+  }
   
-  .slider {
+  .tarde-slider {
     display: flex;
     height: 587px;
     transition: transform 0.5s ease-in-out;
@@ -59,6 +63,7 @@
     background-color: #F75241;
 
     &__wrapper {
+      max-width: 1624px;
       margin: 0 auto;
     }
 

@@ -1,7 +1,7 @@
 let slider = document.querySelector('.pack-slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),
-  slides = slider.querySelectorAll('.slide'),
+  slides = Array.from(slider.querySelectorAll('.slide')),
   arrows = slider.querySelector('.slider-arrows'),
   prev = arrows.children[0],
   next = arrows.children[1],
@@ -19,7 +19,7 @@ let slider = document.querySelector('.pack-slider'),
   transition = true,
   nextTrf = 0,
   prevTrf = 0,
-  lastTrf = --slides.length * slideWidth,
+  lastTrf = slides.length - 1 * slideWidth,
   posThreshold = slides[0].offsetWidth * 0.35,
   trfRegExp = /([-0-9.]+(?=px))/,
   swipeStartTime,
@@ -34,7 +34,7 @@ let slider = document.querySelector('.pack-slider'),
     sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
 
     prev.classList.toggle('disabled', slideIndex === 0);
-    next.classList.toggle('disabled', slideIndex === --slides.length);
+    next.classList.toggle('disabled', slideIndex === slides.length - 1);
   },
   swipeStart = function() {
     let evt = getEvent();
@@ -95,7 +95,7 @@ let slider = document.querySelector('.pack-slider'),
       }
 
       // запрет ухода вправо на последнем слайде
-      if (slideIndex === --slides.length) {
+      if (slideIndex === slides.length - 1) {
         if (posInit > posX1) {
           setTransform(transform, lastTrf);
           return;

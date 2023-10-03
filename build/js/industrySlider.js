@@ -1,4 +1,4 @@
-let slider = document.querySelector('.pack-slider'),
+let slider = document.querySelector('.industry-slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),
   slides = Array.from(slider.querySelectorAll('.slide')),
