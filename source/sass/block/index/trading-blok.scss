@@ -61,6 +61,8 @@
     height: 100%;
     padding: 0 148px;
     background-color: #F75241;
+    //background: url("../img/main/burnt.png"), #F75241 0px -293.078px / 100% 218.085% no-repeat;
+    mix-blend-mode: lighten;
 
     &__wrapper {
       max-width: 1624px;
