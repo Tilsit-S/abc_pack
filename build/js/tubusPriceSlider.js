@@ -1,6 +1,6 @@
 "use strict";
 
-var slider = document.querySelector('.pack-slider'),
+var slider = document.querySelector('.tubus-slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),
   slides = Array.from(slider.querySelectorAll('.slide')),

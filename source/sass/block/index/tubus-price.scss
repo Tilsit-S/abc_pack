@@ -1,0 +1,259 @@
+.tubus-price {
+    background: rgba(247, 82, 65, 0.70);
+
+    .container {
+        padding: 0 142px 100px 148px;
+    }
+
+    .packing {
+        &__wrapper {
+            width: 885px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 0 50px 0;
+            padding-top: 73px;
+        }
+
+        &__title {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 42px;
+            margin-bottom: 27px;
+            color: $white;
+        }
+
+        &__description {
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 42px;
+        }
+
+        .tubus-slider {
+            position: relative;
+            margin-bottom: 100px;
+            margin-bottom: 60px;
+    
+            .slider-list {
+                width: 1690px;
+                height: 550px;
+                padding-bottom: 40px;
+    
+                .slider-track {
+                    height: 100%;
+                }
+    
+                .slide {
+                    border: none;
+
+                    .slide-card {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        align-items: center;
+                        width: 400px;
+                        border: none;
+                        border-radius: 14px;
+                        line-height: 0;
+                        overflow: hidden;
+                        background-color: $white;
+                        border-radius: 32px;
+                        box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
+            
+                        &__description {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            padding: 0 25px 0px 25px;
+                        }
+        
+                        &__name {
+                            font-size: 19px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            color: $black;
+                            margin-bottom: 4px;
+                        }
+
+                        &__features {
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            color: #EF3C15;
+                            margin-bottom: 10px;
+                        }
+
+                        &__count {
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: center;
+                            color: $black;
+                            margin-bottom: 10px;
+                        }
+
+                        &__calculation-wrapper {
+                            margin-bottom: 5px;
+                        }
+
+                        &__calculation {
+                            font-size: 12px;
+                            font-weight: 300;
+                            line-height: normal;
+                            color: #000;
+                        }
+
+                        &__ellipse-wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 30px;
+                            margin-bottom: 20px;
+                        }
+
+                        &__ellipse {
+                            display: block;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background-color: #EF3C15;
+                        }
+
+                        &__provide {
+                            text-align: center;
+                            margin-bottom: 20px;
+
+                            p {
+                                position: relative;
+                                font-size: 16px;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                padding-right: 28px;
+                                color: #EF3C15;
+
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    top: 0;
+                                    right: 0;
+                                    background-image: url("../img/main/tubus-slider/info.svg");
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                        }
+
+                        &__buy-button {
+                            display: block;
+                            width: 330px;
+                            padding: 10px 0;
+                            margin: 0 auto;
+                            color: #01B489;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: normal;
+                            background: #FFF;
+                            border: 1px solid #01B489;
+                            border-radius: 32px;
+                            margin-bottom: 10px;
+                        }
+
+                        &__add__button {
+                            display: block;
+                            width: 330px;
+                            padding: 10px 0;
+                            margin: 0 auto;
+                            color: $white;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: normal;
+                            background: #EF3C15;
+                            border: none;
+                            border-radius: 32px;
+                            margin: 0 auto 36px;
+                        }
+                    }
+                }
+            }
+    
+            .slider-arrows {
+                position: absolute;
+                top: -106px;
+                right: -24px;
+                display: flex;
+                justify-content: space-between;
+                width: 130px;
+                flex-direction: row;
+    
+                .prev {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url("../img/main/industry-slider/arrow-circle.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 50%;
+                    background-color: $white;
+                    box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
+                }
+    
+                .next {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url("../img/main/industry-slider/arrow-circle.svg");
+                    transform: rotate(180deg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 50%;
+                    background-color: $white;
+                    box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
+                }
+            }
+        }
+
+        &__tabs-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 650px;
+            margin-bottom: 50px;
+        }
+
+        &__tab {
+            display: block;
+            padding: 8px 20px;
+            border-radius: 24px;
+            border: 1px solid rgba(239, 60, 21, 0.30);
+            background: $white;
+            box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: normal;
+            color: #EF3C15;
+            cursor: pointer;
+        }
+
+        &__showing-link {
+            display: block;
+            width: 456px;
+            padding: 20px 48px;
+            border-radius: 32px;
+            background: $white;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: #EF3C15;
+            text-align: center;
+            margin: 0 auto;
+            border: none;
+            box-shadow: 0px 4px 24px 0px rgba(239, 60, 21, 0.32);
+            cursor: pointer;
+        }
+    }
+}
