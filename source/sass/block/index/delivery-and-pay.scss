@@ -1,0 +1,93 @@
+.delivery-and-pay {
+    background-image: url("../img/main/delivery-and-pay/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    
+    .container {
+        width: 1624px;
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        padding: 60px 0 38px 0;
+    }
+
+    &__title {
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 55px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 38px;
+        gap: 15px 0;
+    }
+
+    .link {
+        padding: 15px 0;
+    }
+
+    .item {
+        &__item-link {
+            display: block;
+            color: #FFF;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 48px;
+            padding-left: 64px;
+            border-radius: 40px;
+            border: 2px solid #EF3C15;
+            background: var(--CP1, #EF3C15);
+        }
+
+        &__sublist-text-wrapper {
+            display: none;
+            width: 1447px;
+            padding: 0px 30px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            background-color: $white;
+
+            &.show {
+                display: block;
+            }
+        }
+
+        &__sublist-text-description {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+        }
+
+        &__sublist-list-description {
+            list-style: disc;
+            padding-left: 30px;
+        }
+
+        &__sublist-list-item {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+        }
+
+        &__placeholder-input:checked ~ .item__sublist-text-wrapper {
+            display: block;
+        }
+    }
+}

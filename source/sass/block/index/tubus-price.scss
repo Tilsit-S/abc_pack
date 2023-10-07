@@ -2,7 +2,7 @@
     background: rgba(247, 82, 65, 0.70);
 
     .container {
-        padding: 0 142px 100px 148px;
+        padding: 0 142px 109px 148px;
     }
 
     .packing {
@@ -11,7 +11,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 0 0 50px 0;
+            margin: 0 0 48px 0;
             padding-top: 73px;
         }
 
@@ -19,7 +19,7 @@
             font-size: 46px;
             font-weight: 900;
             line-height: 42px;
-            margin-bottom: 27px;
+            margin-bottom: 28px;
             color: $white;
         }
 
@@ -27,7 +27,7 @@
             font-size: 28px;
             font-style: normal;
             font-weight: 400;
-            line-height: 42px;
+            line-height: 34px;
         }
 
         .tubus-slider {
@@ -36,23 +36,25 @@
             margin-bottom: 60px;
     
             .slider-list {
+                overflow: inherit;
                 width: 1690px;
                 height: 550px;
-                padding-bottom: 40px;
     
                 .slider-track {
                     height: 100%;
                 }
     
                 .slide {
+                    width: auto;
                     border: none;
 
                     .slide-card {
                         display: flex;
                         flex-direction: column;
+                        justify-content: flex-start;
                         height: 100%;
                         align-items: center;
-                        width: 400px;
+                        width: 370px;
                         border: none;
                         border-radius: 14px;
                         line-height: 0;
@@ -70,10 +72,10 @@
         
                         &__name {
                             font-size: 19px;
-                            line-height: 30px;
+                            line-height: 23px;
                             font-weight: 700;
                             color: $black;
-                            margin-bottom: 4px;
+                            margin-bottom: 10px;
                         }
 
                         &__features {
@@ -82,7 +84,7 @@
                             line-height: normal;
                             text-transform: uppercase;
                             color: #EF3C15;
-                            margin-bottom: 10px;
+                            margin-bottom: 20px;
                         }
 
                         &__count {
@@ -90,7 +92,7 @@
                             font-weight: 400;
                             text-align: center;
                             color: $black;
-                            margin-bottom: 10px;
+                            margin-bottom: 20px;
                         }
 
                         &__calculation-wrapper {
@@ -127,7 +129,7 @@
                             p {
                                 position: relative;
                                 font-size: 16px;
-                                line-height: normal;
+                                line-height: 19px;
                                 text-transform: uppercase;
                                 padding-right: 28px;
                                 color: #EF3C15;
@@ -240,7 +242,7 @@
 
         &__showing-link {
             display: block;
-            width: 456px;
+            width: 400px;
             padding: 20px 48px;
             border-radius: 32px;
             background: $white;

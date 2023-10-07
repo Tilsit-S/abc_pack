@@ -1,60 +1,42 @@
-.order-form {
+.mailing {
     background: linear-gradient(277deg, rgba(239, 60, 21, 0.65) 1.94%, rgba(245, 138, 115, 0.33) 20.49%, rgba(252, 214, 205, 0.84) 76.29%, rgba(239, 60, 21, 0.56) 100%);
 
+    .container {
+        width: 1624px;
+        margin: 0 auto;
+    }
+    
     &__wrapper {
-        padding: 76px 0 83px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 99px 0 78px 0;
     }
 
     .form {
         position: relative;
         display: flex;
-        flex-direction: column;
-        width: 741px;
-        margin: 0 auto;
+        justify-content: flex-start;
+        width: 932px;
         padding: 40px 100px;
         background-color: $white;
         border-radius: 32px;
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url("../img/main/form/pack.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 418px;
-            height: 531px;
-            top: -10px;
-            left: -403px;
+        &__wrapper {
+            width: 100%;
         }
 
         &::after {
             position: absolute;
             content: "";
-            background-image: url("../img/main/form/coffee-red.png");
+            background-image: url("../img/main/mailing/1.png");
             background-size: contain;
             background-repeat: no-repeat;
-            width: 311px;
-            height: 459px;
-            top: -20px;
-            right: -340px;
-            z-index: 2;
-        }
-
-        &__image {
-            position: relative;
-
-            &::after {
-                position: absolute;
-                content: "";
-                background-image: url("../img/main/form/coffee-gray.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 512px;
-                height: 700px;
-                top: -293px;
-                right: -1211px;
-                z-index: 1;
-            }
+            width: 328px;
+            height: 475px;
+            top: -30px;
+            right: -470px;
+            z-index: 1;
         }
 
         &__title {
@@ -62,8 +44,7 @@
             font-style: normal;
             font-weight: 900;
             line-height: 60px;
-            margin-bottom: 18px;
-            text-align: center;
+            margin-bottom: 9px;
         }
 
         &__description {
@@ -71,40 +52,45 @@
             font-style: normal;
             font-weight: 400;
             line-height: 27px;
-            margin-bottom: 23px;
+            margin-bottom: 19px;
 
             span {
-                color: rgba(239, 60, 21, 0.82);
+                color: var(--cp-182, rgba(239, 60, 21, 0.82));
             }
         }
 
+        &__info-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
         &__user-name {
-            width: 100%;
+            width: 50%;
             font-size: 22px;
             font-weight: 400;
-            line-height: 40px;
+            line-height: 33px;
             border: none;
+            margin-right: 30px;
             border-bottom: 1px solid #333;
             color: var(#828282);
-            margin-bottom: 22px;
         }
 
         &__user-phone {
-            width: 100%;
-            font-size: 22px;
+            width: 50%;
+            font-size: 19px;
             font-weight: 400;
             line-height: 33px;
             border: none;
             border-bottom: 1px solid #333;
             color: var(#828282);
-            margin-bottom: 24px;
         }
 
         &__checkbox-wrapper {
             display: flex;
             flex-direction: row;
             width: 100%;
-            margin-bottom: 42px;
+            margin-bottom: 34px;
 
             input {
                 margin-right: 6px;
@@ -129,7 +115,7 @@
 
         &__button {
             display: block;
-            width: 100%;
+            width: 402px;
             color: $white;
             font-size: 26px;
             font-style: normal;
@@ -138,6 +124,23 @@
             border: none;
             border-radius: 32px;
             background: #EF3C15;
+        }
+
+        &__image {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/mailing/2.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 328px;
+                height: 475px;
+                top: -342px;
+                right: -1560px;
+                z-index: 2;
+            }
         }
     }
 }

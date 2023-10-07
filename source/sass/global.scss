@@ -41,7 +41,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     padding: 0;
     margin: 0;
 }
@@ -60,6 +61,11 @@ ul {
     height: 1px;
     width: 1px;
     overflow: hidden;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
 }
 
 /*.container {
