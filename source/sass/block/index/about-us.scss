@@ -5,7 +5,7 @@
         position: relative;
         width: 1624px;
         margin: 0 auto;
-        padding-top: 64px;
+        padding: 64px 0 0 0;
     }
 
     &__title {
@@ -50,28 +50,49 @@
         gap: 0 80px;
         margin-bottom: 140px;
         padding-left: 70px;
+
+        @media (max-width: 1580px) {
+            width: 1290px;
+            margin: 0 auto;
+            gap: 0 80px;
+            padding-left: 0;
+        }
     }
 
     .features-item {
+        width: 446px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 446px;
+
+        @media (max-width: 1580px) {
+            width: 350px;
+        }
 
         &__title {
             font-size: 36px;
             font-weight: 600;
             line-height: 42px;
             margin-bottom: 18px;
+
+            @media (max-width: 1580px) {
+                font-size: 32px;
+            }
         }
 
         &__description {
             font-size: 22px;
             font-weight: 300;
             line-height: 33px;
+
+            @media (max-width: 1580px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
 
         img {
+            width: 100%;
             margin-bottom: 7px;
         }
 

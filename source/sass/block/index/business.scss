@@ -486,6 +486,203 @@
 }
 
 
+@media (max-width: $mobile-width) {
+  .business {
+    .container {
+      padding: 0 1px 1px 12px;
+    }
+
+    .product {
+        &__wrapper {
+            width: 700px;
+            margin: 0 0 24px 0;
+            padding-top: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 8px;
+        }
+
+        &__description {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .industry-slider {
+          position: relative;
+          margin-bottom: 102px;
+
+            .slider-list {
+                width: 1690px;
+                height: 378px;
+
+                .slider-track {
+                  height: 100%;
+                }
+
+                .slide {
+  
+                    border: none;
+                    .slide-card {
+                        height: 100%;
+                        align-items: center;
+                        width: 280px;
+
+                        img {
+                          width: 100%;
+                          height: 77%;
+                        }
+            
+                        &__description {
+                          width: 100%;
+                          height: 100%;
+                          text-align: center;
+                          background-color: #F5F9FC;
+                          padding: 14px 25px 0px 25px;
+                        }
+        
+                        &__name {
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin-bottom: 2px;
+                        }
+
+                        &__name-description {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                      margin-right: 22px;
+                    }
+                }
+            }
+
+            .slider-arrows {
+              width: 107%;
+              top: 169px;
+              right: -6px;
+              margin-top: 0;
+              z-index: 3;
+
+              .prev {
+                width: 40px;
+                height: 40px;
+              }
+
+              .next {
+                width: 40px;
+                height: 40px;
+              }
+            }
+        }
+    }
+
+    .packing {
+      &__wrapper {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 24px 0;
+      }
+
+      &__title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 8px;
+      }
+
+      &__description {
+          font-size: 12px;
+          line-height: 18px;
+      }
+
+      .pack-slider {
+        position: relative;
+        margin-bottom: 64px;
+
+
+      .slider-list {
+        width: 1690px;
+        height: 378px;
+
+        .slider-track {
+          height: 100%;
+        }
+
+        .slide {
+  
+          border: none;
+          .slide-card {
+              height: 100%;
+              align-items: center;
+              width: 280px;
+
+              img {
+                width: 100%;
+                height: 77%;
+              }
+  
+              &__description {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                background-color: #F5F9FC;
+                padding: 14px 25px 0px 25px;
+              }
+
+              &__name {
+                  font-size: 14px;
+                  line-height: 21px;
+                  margin-bottom: 2px;
+              }
+
+              &__name-description {
+                  font-size: 12px;
+                  line-height: 18px;
+              }
+          }
+
+          &:not(:last-child) {
+            margin-right: 22px;
+          }
+      }
+      }
+
+      .slider-arrows {
+        width: 107%;
+        top: 169px;
+        right: -6px;
+        margin-top: 0;
+        z-index: 3;
+
+        .prev {
+          width: 40px;
+          height: 40px;
+        }
+
+        .next {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      }
+    }
+
+    &__showing-link {
+      width: 242px;
+      padding: 10px 0;
+      font-size: 16px;
+      margin-bottom: 39px;
+    }
+}
+}
+
+
 
 
 
