@@ -1,4 +1,5 @@
 .delivery-and-pay {
+    overflow: hidden;
     background-image: url("../img/main/delivery-and-pay/1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,6 +89,85 @@
 
         &__placeholder-input:checked ~ .item__sublist-text-wrapper {
             display: block;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .delivery-and-pay {
+        min-height: 10px;
+        
+        .container {
+            width: 744px;
+            margin: 0 auto;
+        }
+    
+        &__wrapper {
+            padding: 40px 40px 30px 40px;
+        }
+    
+        &__title {
+            font-size: 36px;
+            line-height: 54px;
+            margin-bottom: 12px;
+        }
+    
+        &__description {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 0;
+            gap: 2px 0;
+        }
+    
+        .link {
+            padding: 12px 0;
+        }
+    
+        .item {
+            &__item-link {
+                font-size: 24px;
+                line-height: 36px;
+                padding-left: 64px;
+            }
+    
+            &__sublist-text-wrapper {
+                display: none;
+                width: 620px;
+                padding: 3px 0 0 60px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                background-color: $white;
+    
+                &.show {
+                    display: block;
+                }
+            }
+    
+            &__sublist-text-description {
+                font-size: 20px;
+                line-height: 30px;
+            }
+    
+            &__sublist-list-description {
+                list-style: disc;
+                padding-left: 30px;
+            }
+    
+            &__sublist-list-item {
+                font-size: 20px;
+                line-height: 30px;
+            }
+    
+            &__placeholder-input:checked ~ .item__sublist-text-wrapper {
+                display: block;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 .tubus-price {
+    overflow: hidden;
     background: rgba(247, 82, 65, 0.70);
 
     .container {
@@ -256,6 +257,224 @@
             border: none;
             box-shadow: 0px 4px 24px 0px rgba(239, 60, 21, 0.32);
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .tubus-price {
+            
+        .container {
+            padding: 0 1px 1px 42px;
+        }
+    
+        .packing {
+            &__wrapper {
+                width: 635px;
+                margin: 0 0 25px 0;
+                padding-top: 40px;
+            }
+    
+            &__title {
+                width: 470px;
+                font-size: 36px;
+                font-weight: 900;
+                line-height: 42px;
+                margin-bottom: 14px;
+            }
+    
+            &__description {
+                font-size: 20px;
+                line-height: 24px;
+            }
+    
+            .tubus-slider {
+                position: relative;
+                margin-bottom: 100px;
+                margin-bottom: 34px;
+        
+                .slider-list {
+                    overflow: inherit;
+                    width: 1690px;
+                    height: 519px;
+        
+                    .slider-track {
+                        height: 100%;
+                    }
+        
+                    .slide {
+                        width: 320px;
+                        border: none;
+    
+                        .slide-card {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            height: 100%;
+                            align-items: center;
+                            width: 370px;
+                            border: none;
+                            border-radius: 14px;
+                            line-height: 0;
+                            overflow: hidden;
+                            background-color: $white;
+                            border-radius: 32px;
+                            box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
+                
+                            &__description {
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                padding: 0 25px 0px 25px;
+                            }
+            
+                            &__name {
+                                font-size: 19px;
+                                line-height: 23px;
+                                font-weight: 700;
+                                color: $black;
+                                margin-bottom: 10px;
+                            }
+    
+                            &__features {
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                color: #EF3C15;
+                                margin-bottom: 20px;
+                            }
+    
+                            &__count {
+                                font-size: 14px;
+                                font-weight: 400;
+                                text-align: center;
+                                color: $black;
+                                margin-bottom: 20px;
+                            }
+    
+                            &__calculation-wrapper {
+                                margin-bottom: 5px;
+                            }
+    
+                            &__calculation {
+                                font-size: 12px;
+                                font-weight: 300;
+                                line-height: normal;
+                                color: #000;
+                            }
+    
+                            &__ellipse-wrapper {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                width: 30px;
+                                margin-bottom: 20px;
+                            }
+    
+                            &__ellipse {
+                                display: block;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background-color: #EF3C15;
+                            }
+    
+                            &__provide {
+                                text-align: center;
+                                margin-bottom: 20px;
+    
+                                p {
+                                    position: relative;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    text-transform: uppercase;
+                                    padding-right: 28px;
+                                    color: #EF3C15;
+    
+                                    &::after {
+                                        position: absolute;
+                                        content: "";
+                                        display: block;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 0;
+                                        right: 0;
+                                        background-image: url("../img/main/tubus-slider/info.svg");
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                    }
+                                }
+                            }
+    
+                            &__buy-button {
+                                display: block;
+                                width: 330px;
+                                padding: 10px 0;
+                                margin: 0 auto;
+                                color: #01B489;
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: normal;
+                                background: #FFF;
+                                border: 1px solid #01B489;
+                                border-radius: 32px;
+                                margin-bottom: 10px;
+                            }
+    
+                            &__add__button {
+                                display: block;
+                                width: 330px;
+                                padding: 10px 0;
+                                margin: 0 auto;
+                                color: $white;
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: normal;
+                                background: #EF3C15;
+                                border: none;
+                                border-radius: 32px;
+                                margin: 0 auto 36px;
+                            }
+                        }
+                    }
+                }
+        
+                .slider-arrows {
+                    top: 227px;
+                    right: -10px;
+                    width: 752px;
+                    z-index: 4;
+        
+                    .prev {
+                        width: 55px;
+                        height: 55px;
+                    }
+        
+                    .next {
+                        display: block;
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+    
+            &__tabs-wrapper {
+                width: 528px;
+                margin-bottom: 26px;
+            }
+    
+            &__tab {
+                padding: 8px 20;
+                font-size: 16px;
+            }
+    
+            &__showing-link {
+                width: 185px;
+                padding: 10px 0;
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
         }
     }
 }

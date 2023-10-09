@@ -1,4 +1,5 @@
 .achievements {
+    overflow: hidden;
     background: #EF3C15;
 
     .container {
@@ -39,6 +40,53 @@
             line-height: 28px;
             text-align: center;
             color: $white;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .achievements {
+        overflow: hidden;
+        background: #EF3C15;
+    
+        .container {
+            margin: 0 auto;
+        }
+    
+        &__wrapper {
+            padding: 29px 0 40px 0;
+        }
+    
+        &__list {
+            width: 688px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 234px;
+    
+            span {
+                font-size: 48px;
+                line-height: 72px;
+            }
+    
+            &__title {
+                font-size: 14px;
+                line-height: 12px;
+            }
+    
+            &__text {
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: $white;
+            }
         }
     }
 }
