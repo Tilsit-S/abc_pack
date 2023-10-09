@@ -1,6 +1,6 @@
 .facts {
     overflow: hidden;
-    background: rgba(244, 247, 250, 0.30);
+    background: #F4F7FA;
 
     &__wrapper {
         width: 1624px;
@@ -251,6 +251,124 @@
                 font-size: 20px;
                 line-height: 30px;
                 margin-bottom: 8px;
+            }
+    
+            &__description {
+                font-size: 12px;
+                line-height: 18px;
+            }
+    
+            &:nth-child(1)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "1";
+                font-size: 32px;
+            }
+    
+            &:nth-child(2)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "2";
+                font-size: 32px;
+            }
+    
+            &:nth-child(3)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "3";
+                font-size: 32px;
+            }
+    
+            &:nth-child(4)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "4";
+                font-size: 32px;
+            }
+    
+            &:nth-child(5)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "5";
+                font-size: 32px;
+            }
+    
+            &:nth-child(6)::before {
+                top: -14px;
+                left: -11px;
+                width: 45px;
+                height: 45px;
+                padding: 4px;
+                content: "6";
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .facts {
+
+        .container {
+            padding: 0 12px;
+        }
+    
+        &__wrapper {
+            width: 360px;
+            position: relative;
+            margin: 0 auto;
+        }
+    
+        &__title {
+            width: 320px;
+            font-size: 30px;
+            line-height: 36px;
+            margin: 38px 0 35px 0;
+            padding-left: 0;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px 0;
+            margin-bottom: 40px;
+            padding-left: 2px;
+        }
+    
+        .item {
+            align-items: center;
+            width: 336px;
+            height: 150px;
+            padding: 12px 18px 24px 18px;
+
+            &:nth-child(4) {
+                height: 132px;
+            }
+
+            &:nth-child(5) {
+                height: 132px;
+            }
+    
+            &__title {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 6px;
             }
     
             &__description {
