@@ -16,6 +16,11 @@
         background-color: $white;
         border-radius: 32px;
 
+        @media (max-width: 1050px) {
+            width: 700px;
+            padding: 30px 50px;
+        }
+
         &::before {
             position: absolute;
             content: "";
