@@ -267,7 +267,7 @@
     }
   
     &__wrapper {
-        width: 1624px;
+        width: 744px;
         margin: 0 auto;
     }
   
@@ -331,6 +331,10 @@
       padding: 0 43px;
       background-color: #F75241;
       mix-blend-mode: lighten;
+
+      @media (max-width: 600px) {
+        padding: 0 20px;
+      }
   
       &__wrapper {
         max-width: 660px;
@@ -343,6 +347,10 @@
           flex-direction: column;
           width: 660px;
           padding: 38px 0 0 0;
+
+          @media (max-width: 700px) {
+            width: 100%;
+          }
   
           &::after {
               position: absolute;
@@ -354,6 +362,11 @@
               right: -12px;
               width: 380px;
               height: 260px;
+
+              @media (max-width: 700px) {
+                width: 267px;
+                height: 187px;
+              }
           }
         }
   
@@ -365,12 +378,28 @@
           text-transform: uppercase;
           color: #FFF;
           margin-bottom: 29px;
+
+          @media (max-width: 700px) {
+            font-size: 40px;
+            line-height: 115%;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 30px;
+            line-height: 110%;
+            margin-bottom: 4px;
+          }
         }
   
         &__description {
             width: 280px;
             font-size: 16px;
             margin: 0 0 29px 0;
+
+            @media (max-width: 600px) {
+              margin: 0 0 140px 0;
+              color: $white;
+            }
         }
   
         &__button-wrapper {
@@ -378,6 +407,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media (max-width: 600px) {
+              width: 100%;
+            }
         }
   
         &__stock-button {
@@ -414,6 +447,12 @@
         line-height: 120%;
         text-transform: uppercase;
         margin-bottom: 54px;
+
+        @media (max-width: 700px) {
+          font-size: 30px;
+          line-height: 115%;
+          margin-bottom: 140px;
+        }
       }
   
       &__stock-button {
@@ -427,7 +466,12 @@
         border-radius: 32px;
         border: 3px solid #FFF;
         cursor: pointer;
-    }
+
+        @media (max-width: 700px) {
+          font-size: 24px;
+          padding: 10px 30px;
+        }
+      }
     }
   
   }
@@ -537,6 +581,7 @@
             font-size: 14px;
             line-height: 21px;
             margin: 0 0 184px 0;
+            color: #611B14;
         }
   
         &__button-wrapper {
@@ -593,7 +638,7 @@
         border-radius: 32px;
         border: 3px solid #FFF;
         cursor: pointer;
-    }
+      }
     }
   
   }

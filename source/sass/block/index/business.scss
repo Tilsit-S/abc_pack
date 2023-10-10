@@ -316,6 +316,10 @@
 
         &__description {
             font-size: 22px;
+
+            @media(max-width: 670px) {
+              font-size: 15px;
+            }
         }
 
         .industry-slider {
@@ -383,6 +387,24 @@
                 width: 33px;
                 height: 33px;
               }
+
+              @media(max-width: 670px) {
+                  width: 107%;
+                  top: 169px;
+                  right: -6px;
+                  margin-top: 0;
+                  z-index: 3;
+    
+                  .prev {
+                    width: 40px;
+                    height: 40px;
+                  }
+    
+                  .next {
+                    width: 40px;
+                    height: 40px;
+                  }
+              }
             }
         }
     }
@@ -403,6 +425,10 @@
 
       &__description {
           font-size: 22px;
+
+          @media(max-width: 670px) {
+            font-size: 15px;
+          }
       }
 
       .pack-slider {
@@ -471,6 +497,24 @@
             .next {
               width: 33px;
               height: 33px;
+            }
+
+            @media(max-width: 670px) {
+              width: 107%;
+              top: 169px;
+              right: -6px;
+              margin-top: 0;
+              z-index: 3;
+
+              .prev {
+                width: 40px;
+                height: 40px;
+              }
+
+              .next {
+                width: 40px;
+                height: 40px;
+              }
             }
           }
       }
