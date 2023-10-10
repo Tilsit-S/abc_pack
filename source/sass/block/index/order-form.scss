@@ -160,6 +160,11 @@
             width: 458px;
             padding: 34px 20px;
             margin: 0 0 0 42px;
+
+            @media (max-width: 520px) {
+                width: 100%;
+                margin: 0 auto;
+            }
     
             &::before {
                 display: none;
@@ -182,6 +187,10 @@
                     top: -170px;
                     right: -698px;
                     z-index: 2;
+
+                    @media (max-width: 520px) {
+                        display: none;
+                    }
                 }
             }
     

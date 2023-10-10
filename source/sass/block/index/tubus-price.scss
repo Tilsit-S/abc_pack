@@ -23,6 +23,10 @@
                 padding-top: 40px;
                 margin: 0 0 30px 0;
             }
+
+            @media (max-width: 860px) {
+                width: 100%;
+            }
         }
 
         &__title {
@@ -37,6 +41,12 @@
                 line-height: 38px;
                 margin-bottom: 15px;
             }
+
+            @media (max-width: 860px) {
+                br {
+                    display: none;
+                }
+            }
         }
 
         &__description {
@@ -47,6 +57,12 @@
 
             @media (max-width: 1200px) {
                 font-size: 24px;
+            }
+
+            @media (max-width: 860px) {
+                width: 100%;
+                font-size: 21px;
+                line-height: 28px;
             }
         }
 
@@ -89,6 +105,12 @@
 
                         @media (max-width: 1200px) {
                             width: 350px;
+                        }
+
+                        img {
+                            @media (max-width: 860px) {
+                                height: 144px;
+                            }
                         }
             
                         &__description {
@@ -247,6 +269,25 @@
                     background-color: $white;
                     box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
                 }
+
+                @media (max-width: 860px) {
+                    position: absolute;
+                    top: 227px;
+                    right: -10px;
+                    width: 100%;
+                    z-index: 4;
+        
+                    .prev {
+                        width: 55px;
+                        height: 55px;
+                    }
+        
+                    .next {
+                        display: block;
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
             }
         }
 
@@ -298,7 +339,7 @@
     }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
     .tubus-price {
             
         .container {
@@ -307,15 +348,14 @@
     
         .packing {
             &__wrapper {
-                width: 635px;
+                width: 100%;
                 margin: 0 0 25px 0;
                 padding-top: 40px;
             }
     
             &__title {
-                width: 470px;
+                width: 100%;
                 font-size: 36px;
-                font-weight: 900;
                 line-height: 42px;
                 margin-bottom: 14px;
             }
@@ -350,6 +390,7 @@
                             height: 100%;
                             align-items: center;
                             width: 320px;
+                            padding: 0 12px 14px 12px;
                             border: none;
                             border-radius: 14px;
                             line-height: 0;
@@ -371,6 +412,10 @@
                                 font-weight: 700;
                                 color: $black;
                                 margin-bottom: 10px;
+
+                                @media(max-width: 860px) {
+                                    line-height: 21px;
+                                }
                             }
     
                             &__features {
@@ -446,7 +491,7 @@
     
                             &__buy-button {
                                 display: block;
-                                width: 330px;
+                                width: 100%;
                                 padding: 10px 0;
                                 margin: 0 auto;
                                 color: #01B489;
@@ -461,7 +506,7 @@
     
                             &__add__button {
                                 display: block;
-                                width: 330px;
+                                width: 100%;
                                 padding: 10px 0;
                                 margin: 0 auto;
                                 color: $white;
@@ -478,9 +523,10 @@
                 }
         
                 .slider-arrows {
+                    position: relative;
                     top: 227px;
                     right: -10px;
-                    width: 752px;
+                    width: 100%;
                     z-index: 4;
         
                     .prev {
@@ -499,11 +545,21 @@
             &__tabs-wrapper {
                 width: 528px;
                 margin-bottom: 26px;
+
+                @media (max-width: 680px) {
+                    width: 380px;
+                    margin-bottom: 36px;
+                }
             }
     
             &__tab {
-                padding: 8px 20;
+                padding: 8px 20px;
                 font-size: 16px;
+
+                @media (max-width: 680px) {
+                    padding: 8px 10px;
+                    font-size: 13px;
+                }
             }
     
             &__showing-link {

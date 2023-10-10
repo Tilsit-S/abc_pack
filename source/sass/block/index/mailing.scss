@@ -3,8 +3,7 @@
     background: linear-gradient(277deg, rgba(239, 60, 21, 0.65) 1.94%, rgba(245, 138, 115, 0.33) 20.49%, rgba(252, 214, 205, 0.84) 76.29%, rgba(239, 60, 21, 0.56) 100%);
 
     .container {
-        width: 1624px;
-        margin: 0 auto;
+        margin: 0 40px;
     }
     
     &__wrapper {
@@ -12,6 +11,7 @@
         flex-direction: row;
         justify-content: flex-start;
         padding: 99px 0 78px 0;
+        margin: 0 auto;
     }
 
     .form {
@@ -152,6 +152,10 @@
         .container {
             width: 744px;
             margin: 0 auto;
+
+            @media (max-width: 500px) {
+                width: 100%;
+            }
         }
         
         &__wrapper {
@@ -165,6 +169,11 @@
             width: 424px;
             padding: 28px 10px;
             margin: 0 0 0 42px;
+
+            @media (max-width: 500px) {
+                width: 100%;
+                margin: 0;
+            }
     
             &__wrapper {
                 width: 100%;

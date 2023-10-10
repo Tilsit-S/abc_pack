@@ -6,8 +6,13 @@
     min-height: 800px;
     
     .container {
-        width: 1624px;
+        width: 100%;
         margin: 0 auto;
+        padding: 0 148px;
+
+        @media (max-width: 1090px) {
+            padding: 0 80px;
+        }
     }
 
     &__wrapper {
@@ -19,7 +24,18 @@
         font-style: normal;
         font-weight: 900;
         line-height: 60px;
-        margin-bottom: 30px;
+        margin: 60px 0 30px 0;
+
+        @media (max-width: 1090px) {
+            font-size: 39px;
+            line-height: 50px;
+            margin: 50px 0 20px 0;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
 
     &__description {
@@ -28,6 +44,17 @@
         font-weight: 400;
         line-height: 27px;
         margin-bottom: 55px;
+
+        @media (max-width: 1090px) {
+            font-size: 24px;
+            line-height: 21px;
+            margin: 0 0 30px 0;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 21px;
+            line-height: 30px;
+        }
     }
 
     &__list {
@@ -53,11 +80,22 @@
             border-radius: 40px;
             border: 2px solid #EF3C15;
             background: var(--CP1, #EF3C15);
+
+            @media (max-width: 1090px) {
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            @media (max-width: 860px) {
+                font-size: 24px;
+                line-height: 28px;
+                padding-left: 20px;
+            }
         }
 
         &__sublist-text-wrapper {
             display: none;
-            width: 1447px;
+            width: 100%;
             padding: 0px 30px;
             margin: 0 auto;
             margin-bottom: 15px;
@@ -73,6 +111,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 36px;
+
+            @media (max-width: 1090px) {
+                font-size: 21px;
+                line-height: 28px;
+            }
         }
 
         &__sublist-list-description {
@@ -85,6 +128,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 36px;
+
+            @media (max-width: 860px) {
+                font-size: 21px;
+                line-height: 28px;
+            }
         }
 
         &__placeholder-input:checked ~ .item__sublist-text-wrapper {
@@ -98,8 +146,13 @@
         min-height: 10px;
         
         .container {
-            width: 744px;
+            width: 100%;
             margin: 0 auto;
+            padding: 0 42px;
+
+            @media (max-width: 460px) {
+                padding: 0 20px;
+            }
         }
     
         &__wrapper {
@@ -135,15 +188,25 @@
                 font-size: 24px;
                 line-height: 36px;
                 padding-left: 64px;
+                
+                @media (max-width: 680px) {
+                    padding-left: 15px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
     
             &__sublist-text-wrapper {
                 display: none;
-                width: 620px;
+                width: 100%;
                 padding: 3px 0 0 60px;
                 margin: 0 auto;
                 margin-bottom: 15px;
                 background-color: $white;
+
+                @media (max-width: 650px) {
+                    padding: 3px 0 0 20px;
+                }
     
                 &.show {
                     display: block;
@@ -153,6 +216,11 @@
             &__sublist-text-description {
                 font-size: 20px;
                 line-height: 30px;
+
+                @media (max-width: 700px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
     
             &__sublist-list-description {
@@ -163,6 +231,11 @@
             &__sublist-list-item {
                 font-size: 20px;
                 line-height: 30px;
+
+                @media (max-width: 700px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
     
             &__placeholder-input:checked ~ .item__sublist-text-wrapper {

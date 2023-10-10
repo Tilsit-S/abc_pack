@@ -2,11 +2,23 @@
     overflow: hidden;
     background: rgba(244, 247, 250, 0.30);
 
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 148px;
+
+        @media (max-width: 1600px) {
+            padding: 0 80px;
+        }
+
+        @media (max-width: 1300px) {
+            padding: 0 30px;
+        }
+    }
+
     &__wrapper {
         position: relative;
-        width: 1624px;
-        margin: 0 auto;
-        padding-top: 82px;
+        padding: 64px 0 0 0;
     }
 
     &__title {
@@ -15,6 +27,7 @@
         font-weight: 900;
         line-height: 60px;
         margin-bottom: 13px;
+        padding: 64px 0 0 0;
     }
 
     &__description {
@@ -27,11 +40,11 @@
 
     &__link {
         position: absolute;
-        top: 206px;
-        left: 2px;
         display: block;
-        width: 428px;
-        padding: 19px 0;
+        top: 201px;
+        left: 148px;
+        width: 318px;
+        padding: 18px 0;
         border-radius: 32px;
         background: $white;
         font-size: 24px;
@@ -43,13 +56,48 @@
         margin: 0 auto;
         border: 2px solid #EF3C15;
         cursor: pointer;
+
+        @media (max-width: 1090px) {
+            top: 201px;
+            left: 78px;
+            width: 300px;
+            padding: 12px 0;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        @media (max-width: 1300px) {
+            left: 30px;
+        }
     }
 
     &__features-list {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         gap: 0 69px;
-        padding: 0 0 100px 70px;
+        margin-bottom: 140px;
+        padding-left: 70px;
+
+        @media (max-width: 1580px) {
+            width: 100%px;
+            margin: 0 auto;
+            gap: 0 80px;
+            padding-left: 0;
+        }
+
+        @media (max-width: 1580px) {
+            width: 100%;
+            margin: 0 auto;
+            gap: 0 80px;
+            padding-left: 0;
+        }
+
+        @media (max-width: 1580px) {
+            gap: 0 50px;
+        }
     }
 
     .features-item {
@@ -65,8 +113,18 @@
 
         &__description {
             font-size: 36px;
-            font-weight: 700;
-            line-height: 43px;
+            font-weight: 600;
+            line-height: 42px;
+            margin-bottom: 18px;
+
+            @media (max-width: 1580px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 1130px) {
+                font-size: 21px;
+                line-height: 21px;
+            }
         }
 
         &:nth-child(1) {
@@ -85,13 +143,14 @@
         background: rgba(244, 247, 250, 0.30);
 
         .container {
-            width: 744px;
-            margin: 0 auto;
+            padding: 0 40px;
         }
     
         &__wrapper {
             position: relative;
-            padding: 32px 20px 0 42px;
+            width: 1624px;
+            margin: 0 auto;
+            padding-top: 64px;
         }
     
         &__title {
@@ -107,7 +166,7 @@
         }
     
         &__link {
-            top: 148px;
+            top: 182px;
             left: 42px;
             width: 254px;
             padding: 8px 0;
@@ -123,6 +182,12 @@
             margin-bottom: 0;
             padding-left: 2px;
             padding-bottom: 23px;
+
+            @media (max-width: 720px) {
+                flex-direction: column;
+                width: 100%;
+                gap: 0 12px;
+            }
         }
     
         .features-item {
@@ -130,6 +195,11 @@
             flex-direction: column;
             justify-content: space-between;
             width: 212px;
+
+            @media (max-width: 720px) {
+                width: 100%;
+                gap: 20px;
+            }
     
             &__title {
                 font-size: 14px;
@@ -186,7 +256,7 @@
         }
     
         &__link {
-            top: 975px;
+            top: 1084px;
             left: 52px;
         }
     

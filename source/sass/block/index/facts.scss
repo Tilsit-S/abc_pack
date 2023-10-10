@@ -223,6 +223,10 @@
             width: 744px;
             margin: 0 auto;
             padding-top: 64px;
+
+            @media (max-width: 715px) {
+                width: 100%;
+            }
         }
     
         &__title {
@@ -239,6 +243,12 @@
             gap: 30px 20px;
             margin-bottom: 40px;
             padding-left: 2px;
+
+            @media (max-width: 715px) {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+            }
         }
     
         .item {
@@ -246,6 +256,10 @@
             width: 320px;
             height: 150px;
             padding: 12px 10px 22px 14px;
+
+            @media (max-width: 715px) {
+                width: 100%;
+            }
     
             &__title {
                 font-size: 20px;
