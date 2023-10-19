@@ -53,6 +53,10 @@
         @media (max-width: 880px) {
             gap: 50px 40px;
         }
+
+        @media (max-width: 800px) {
+            gap: 35px 27px;
+        }
     }
 
     .item {
@@ -73,14 +77,18 @@
             width: 425px;
         }
 
-        @media (max-width: 1420px) {
-            width: 370px;
-            height: 200px;
+        @media (max-width: 1460px) {
+            width: 380px;
+            height: auto;
             padding: 12px;
         }
 
-        @media (max-width: 1420px) {
+        @media (max-width: 1430px) {
             width: 345px;
+        }
+
+        @media (max-width: 790px) {
+            width: 330px;
         }
 
         &__title {
@@ -89,7 +97,7 @@
             line-height: 42px;
             margin-bottom: 10px;
 
-            @media (max-width: 1430px) {
+            @media (max-width: 1460px) {
                 font-size: 21px;
             }
         }
@@ -99,8 +107,8 @@
             line-height: 30px;
 
             @media (max-width: 1430px) {
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 18px;
+                line-height: 28px;
             }
 
             @media (max-width: 1420px) {
@@ -123,6 +131,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
 
         &:nth-child(2)::before {
@@ -140,6 +167,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
 
         &:nth-child(3)::before {
@@ -157,6 +203,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
 
         &:nth-child(4)::before {
@@ -174,6 +239,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
 
         &:nth-child(5)::before {
@@ -191,6 +275,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
 
         &:nth-child(6)::before {
@@ -208,6 +311,25 @@
             padding: 20px;
             background: #01B489;
             border-radius: 50%;
+
+            @media (max-width: 1430px) {
+                top: -42px;
+                left: -50px;
+            }
+
+            @media (max-width: 880px) {
+                top: -44px;
+                left: -44px
+            }
+
+            @media (max-width: 800px) {
+                top: -30px;
+                left: -11px;
+                width: 55px;
+                height: 55px;
+                padding: 10px;
+                font-size: 32px;
+            }
         }
     }
 }
