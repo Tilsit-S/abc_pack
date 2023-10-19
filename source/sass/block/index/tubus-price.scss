@@ -356,7 +356,7 @@
             }
     
             &__title {
-                width: 100%;
+                max-width: 440px;
                 font-size: 36px;
                 line-height: 42px;
                 margin-bottom: 14px;
@@ -555,6 +555,7 @@
             &__tab {
                 padding: 8px 20px;
                 font-size: 16px;
+                margin-right: 14px;
 
                 @media (max-width: 680px) {
                     padding: 8px 10px;
