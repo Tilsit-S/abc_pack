@@ -1,4 +1,4 @@
-var slider = document.querySelector('.tarde-slider');
+/*var slider = document.querySelector('.tarde-slider');
 var prevButton = document.querySelector('.prev-button');
 var nextButton = document.querySelector('.next-button');
 var slides = Array.from(slider.querySelectorAll('.slider-item'));
@@ -28,4 +28,4 @@ function updateSlider() {
   });
 }
 
-updateSlider();
+updateSlider();*/
