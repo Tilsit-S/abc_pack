@@ -56,19 +56,23 @@
         border: 2px solid #EF3C15;
         cursor: pointer;
 
+        @media (max-width: 1600px) {
+            left: 80px;
+        }
+
+        @media (max-width: 1300px) {
+            left: 30px;
+        }
+
         @media (max-width: 1090px) {
             top: 201px;
-            left: 78px;
+            left: 30px;
             width: 300px;
             padding: 12px 0;
             font-size: 21px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-        }
-
-        @media (max-width: 1300px) {
-            left: 30px;
         }
     }
 
@@ -78,18 +82,18 @@
         flex-direction: row;
         gap: 0 80px;
         margin-bottom: 140px;
-        padding-left: 70px;
+        padding-left: 62px;
 
         @media (max-width: 1580px) {
             width: 100%px;
-            margin: 0 auto;
+            margin: 0 auto 80px;
             gap: 0 80px;
             padding-left: 0;
         }
 
         @media (max-width: 1580px) {
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto 60px;
             gap: 0 80px;
             padding-left: 0;
         }
@@ -187,6 +191,10 @@
             border-radius: 32px;
             font-size: 17px;
             line-height: normal;
+
+            @media (max-width: 680px) {
+                top: 210px;
+            }
         }
     
         &__features-list {

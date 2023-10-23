@@ -396,13 +396,22 @@
                   z-index: 3;
     
                   .prev {
-                    width: 40px;
-                    height: 40px;
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url("../img/main/business/arrow.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
                   }
     
                   .next {
-                    width: 40px;
-                    height: 40px;
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url("../img/main/business/arrow.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transform: scale(-1, 1);
                   }
               }
             }
@@ -507,13 +516,22 @@
               z-index: 3;
 
               .prev {
-                width: 40px;
-                height: 40px;
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-image: url("../img/main/business/arrow.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
               }
 
               .next {
-                width: 40px;
-                height: 40px;
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-image: url("../img/main/business/arrow.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: scale(-1, 1);
               }
             }
           }

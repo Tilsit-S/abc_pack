@@ -11,7 +11,7 @@
     }
 
     &__list {
-        width: 1035px;
+        width: 1010px;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -137,11 +137,12 @@
     
         &__list {
             width: 300px;
-            margin: 30px auto 65px;
+            margin: 34px auto 65px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            gap: 49px 0;
         }
     
         .item {
@@ -165,10 +166,6 @@
                 line-height: 21px;
                 text-align: center;
                 color: $white;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 51px;
             }
         }
     }

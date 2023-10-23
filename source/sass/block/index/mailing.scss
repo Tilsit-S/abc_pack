@@ -3,15 +3,78 @@
     background: linear-gradient(277deg, rgba(239, 60, 21, 0.65) 1.94%, rgba(245, 138, 115, 0.33) 20.49%, rgba(252, 214, 205, 0.84) 76.29%, rgba(239, 60, 21, 0.56) 100%);
 
     .container {
-        margin: 0 40px;
+        margin: 0 152px;
+
+        @media (max-width: 1430px) {
+            margin: 0 80px;
+        }
     }
     
     &__wrapper {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        padding: 99px 0 78px 0;
+        padding: 99px 0 102px 0;
         margin: 0 auto;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/mailing/2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 316px;
+            height: 438px;
+            top: 96px;
+            right: -77px;
+            z-index: 2;
+
+            @media (max-width: 1280px) {
+                width: 243px;
+                height: 376px;
+                top: 96px;
+                right: -34px;
+            }
+
+            @media (max-width: 1110px) {
+                width: 171px;
+                height: 263px;
+                top: 119px;
+                right: -34px;
+            }
+
+            @media (max-width: 950px) {
+                right: -10px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../img/main/mailing/1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 321px;
+            height: 484px;
+            top: 42px;
+            right: 188px;
+            z-index: 1;
+
+            @media (max-width: 1280px) {
+                top: 72px;
+                right: 188px;
+                width: 269px;
+                height: 418px;
+            }
+
+            @media (max-width: 1110px) {
+                width: 195px;
+                height: 286px;
+                top: 96px;
+                right: 93px;
+            }
+        }
     }
 
     .form {
@@ -23,21 +86,26 @@
         background-color: $white;
         border-radius: 32px;
 
-        &__wrapper {
+        @media (max-width: 1730px) {
+            width: 745px;
+        }
+
+        @media (max-width: 1540px) {
+            width: 630px;
+            padding: 20px 50px;
+            z-index: 3;
+        }
+
+        @media (max-width: 1280px) {
+            width: 500px;
+        }
+
+        @media (max-width: 950px) {
             width: 100%;
         }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url("../img/main/mailing/1.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 328px;
-            height: 475px;
-            top: -30px;
-            right: -470px;
-            z-index: 1;
+        &__wrapper {
+            width: 100%;
         }
 
         &__title {
@@ -46,6 +114,11 @@
             font-weight: 900;
             line-height: 60px;
             margin-bottom: 9px;
+
+            @media (max-width: 1110px) {
+                font-size: 32px;
+                line-height: normal;
+            }
         }
 
         &__description {
@@ -125,22 +198,9 @@
             border: none;
             border-radius: 32px;
             background: #EF3C15;
-        }
 
-        &__image {
-            position: relative;
-
-            &::after {
-                position: absolute;
-                content: "";
-                background-image: url("../img/main/mailing/2.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 328px;
-                height: 475px;
-                top: -342px;
-                right: -1560px;
-                z-index: 2;
+            @media (max-width: 1110px) {
+                padding: 10px 0;
             }
         }
     }
@@ -153,7 +213,8 @@
             width: 744px;
             margin: 0 auto;
 
-            @media (max-width: 500px) {
+            @media (max-width: 720px) {
+                padding: 30px 12px;
                 width: 100%;
             }
         }
@@ -163,6 +224,40 @@
             flex-direction: row;
             justify-content: flex-start;
             padding: 38px 0 78px 0;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/mailing/2.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 153px;
+                height: 217px;
+                top: 111px;
+                right: -7px;
+                z-index: 2;
+
+                @media (max-width: 730px) {
+                    right: 15px;
+                }
+            }
+    
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("../img/main/mailing/1.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 157px;
+                height: 258px;
+                top: 70px;
+                right: 109px;
+                z-index: 1;
+
+                @media (max-width: 730px) {
+                    right: 125px;
+                }
+            }
         }
     
         .form {
@@ -170,21 +265,21 @@
             padding: 28px 10px;
             margin: 0 0 0 42px;
 
-            @media (max-width: 500px) {
+            @media (max-width: 730px) {
+                width: 371px;
+            }
+
+            @media (max-width: 720px) {
                 width: 100%;
                 margin: 0;
+            }
+
+            @media (max-width: 500px) {
+                width: 100%;
             }
     
             &__wrapper {
                 width: 100%;
-            }
-    
-            &::after {
-                width: 157px;
-                height: 258px;
-                top: 31px;
-                right: -165px;
-                z-index: 1;
             }
     
             &__title {
@@ -192,6 +287,15 @@
                 line-height: 45px;
                 margin-bottom: 2px;
                 padding-left: 30px;
+
+                @media (max-width: 730px) {
+                    text-align: center;
+                    padding-left: 0;
+                }
+
+                @media (max-width: 460px) {
+                    line-height: normal;
+                }
             }
     
             &__description {
@@ -281,18 +385,6 @@
                 border: none;
                 border-radius: 32px;
                 background: #EF3C15;
-            }
-    
-            &__image {
-                position: relative;
-    
-                &::after {
-                    width: 138px;
-                    height: 227px;
-                    top: -215px;
-                    right: -686px;
-                    z-index: 2;
-                }
             }
         }
     }

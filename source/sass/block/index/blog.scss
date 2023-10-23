@@ -57,19 +57,23 @@
         border: 2px solid #EF3C15;
         cursor: pointer;
 
+        @media (max-width: 1600px) {
+            left: 80px;
+        }
+
+        @media (max-width: 1300px) {
+            left: 30px;
+        }
+
         @media (max-width: 1090px) {
             top: 201px;
-            left: 78px;
+            left: 30px;
             width: 300px;
             padding: 12px 0;
             font-size: 21px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-        }
-
-        @media (max-width: 1300px) {
-            left: 30px;
         }
     }
 
@@ -173,6 +177,10 @@
             border-radius: 32px;
             font-size: 17px;
             line-height: normal;
+
+            @media (max-width: 670px) {
+                top: 220px;
+            }
         }
     
         &__features-list {

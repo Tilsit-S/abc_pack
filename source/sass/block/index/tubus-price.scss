@@ -3,7 +3,7 @@
     background: rgba(247, 82, 65, 0.70);
 
     .container {
-        padding: 0 142px 109px 148px;
+        padding: 0 142px 105px 148px;
 
         @media (max-width: 1200px) {
         padding: 0 50px 70px 50px;
@@ -315,6 +315,12 @@
             cursor: pointer;
         }
 
+        .active-tab {
+            border: 3px solid $white;
+            background-color: #EF3C15;
+            color: $white;
+        }
+
         &__showing-link {
             display: block;
             width: 400px;
@@ -526,9 +532,9 @@
         
                 .slider-arrows {
                     position: relative;
-                    top: 227px;
-                    right: -10px;
-                    width: 100%;
+                    top: 242px;
+                    right: 46px;
+                    width: 107%;
                     z-index: 4;
         
                     .prev {
