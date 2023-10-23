@@ -24,7 +24,7 @@
         font-style: normal;
         font-weight: 900;
         line-height: 60px;
-        margin: 60px 0 30px 0;
+        margin: 64px 0 25px 0;
 
         @media (max-width: 1090px) {
             font-size: 39px;
@@ -43,7 +43,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 27px;
-        margin-bottom: 55px;
+        margin-bottom: 56px;
 
         @media (max-width: 1090px) {
             font-size: 24px;
@@ -62,7 +62,8 @@
         flex-direction: column;
         width: 100%;
         padding-left: 30px;
-        gap: 15px 0;
+        gap: 17px 0;
+        margin-bottom: 100px;
     }
 
     .link {
@@ -122,7 +123,7 @@
             display: none;
             padding: 16px 49px;
             margin: 0 43px;
-            margin-bottom: 11px;
+            margin-bottom: 7px;
             background-color: $white;
 
             &.show {
@@ -229,6 +230,7 @@
             width: 100%;
             padding-left: 0;
             gap: 2px 0;
+            margin-bottom: 40px;
         }
     
         .link {
