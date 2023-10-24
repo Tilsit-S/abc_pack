@@ -29,4 +29,3 @@ function updateSlider() {
 }
 
 updateSlider();*/
-"use strict";
