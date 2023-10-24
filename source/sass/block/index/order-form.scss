@@ -154,6 +154,10 @@
     
         &__wrapper {
             padding: 40px 0;
+
+            @media (max-width: 520px) {
+                padding: 40px 20px;
+            }
         }
     
         .form {

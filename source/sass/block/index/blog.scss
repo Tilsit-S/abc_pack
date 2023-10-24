@@ -245,6 +245,13 @@
             &:nth-child(2) {
                 margin: 41px 0 0 0;
             }
+
+            &:nth-child(3) {
+
+                @media (max-width: 720px) {
+                    margin: 41px 0 0 0;
+                }
+            }
         }
     }
 }
@@ -326,6 +333,13 @@
     
             &:nth-child(2) {
                 margin: 16px 0 15px 0;
+            }
+
+            &:nth-child(3) {
+
+                @media (max-width: 680px) {
+                    margin: 0;
+                }
             }
         }
     }

@@ -5,6 +5,10 @@
     .container {
         padding: 0 142px 100px 148px;
 
+        @media (max-width: 1860px) {
+            padding: 0 70px 70px 70px;
+            }
+
         @media (max-width: 1200px) {
         padding: 0 50px 70px 50px;
         }
@@ -311,9 +315,10 @@
             display: none;
             display: flex;
             flex-direction: row;
+            justify-content: center;
             flex-wrap: wrap;
-            width: 1621px;
-            gap: 44px 47px;
+            width: auto;
+            gap: 1.58vw;
             margin: 0 auto;
             margin-bottom: 60px;
 
@@ -334,6 +339,7 @@
 
                 @media (max-width: 1200px) {
                     width: 350px;
+                    height: 500px;
                 }
 
                 img {
@@ -582,7 +588,7 @@
                         .slide-card {
                             display: flex;
                             flex-direction: column;
-                            justify-content: flex-start;
+                            justify-content: space-between;
                             height: 100%;
                             align-items: center;
                             width: 320px;
@@ -596,7 +602,7 @@
                             box-shadow: 12px 12px 24px 0px rgba(97, 27, 20, 0.32);
 
                             &__wrapper {
-                                max-height: 234px;
+                                max-height: 449px;
                             }
                 
                             &__description {
@@ -611,7 +617,6 @@
                                 line-height: 23px;
                                 font-weight: 700;
                                 color: $black;
-                                //margin-bottom: 10px;
 
                                 @media(max-width: 860px) {
                                     line-height: 21px;
@@ -624,7 +629,6 @@
                                 line-height: normal;
                                 text-transform: uppercase;
                                 color: #EF3C15;
-                                //margin-bottom: 20px;
                             }
     
                             &__count {
@@ -632,11 +636,6 @@
                                 font-weight: 400;
                                 text-align: center;
                                 color: $black;
-                                //margin-bottom: 20px;
-                            }
-    
-                            &__calculation-wrapper {
-                                //margin-bottom: 5px;
                             }
     
                             &__calculation {
@@ -651,7 +650,6 @@
                                 flex-direction: row;
                                 justify-content: space-between;
                                 width: 30px;
-                                //margin-bottom: 20px;
                             }
     
                             &__ellipse {
@@ -664,7 +662,6 @@
     
                             &__provide {
                                 text-align: center;
-                                //margin-bottom: 20px;
     
                                 p {
                                     position: relative;
@@ -723,7 +720,6 @@
                 }
         
                 .slider-arrows {
-                    //position: relative;
                     top: 242px;
                     right: -5px;
                     width: 107%;
@@ -833,7 +829,7 @@
                         border: none;
     
                         .slide-card {
-                            padding: 0 12px 14px 12px;
+                            padding: 0 12px 24px 12px;
                             width: 320px;
 
                             img {
@@ -845,14 +841,14 @@
                             }
             
                             &__name {
-                                margin-bottom: 10px;
+                                //margin-bottom: 10px;
                             }
     
                             &__features {
                                 font-size: 14px;
                                 font-weight: 600;
                                 line-height: normal;
-                                margin-bottom: 20px;
+                                //margin-bottom: 20px;
                             }
     
                             &__count {
@@ -860,11 +856,11 @@
                                 font-weight: 400;
                                 text-align: center;
                                 color: $black;
-                                margin-bottom: 20px;
+                                //margin-bottom: 20px;
                             }
     
                             &__calculation-wrapper {
-                                margin-bottom: 5px;
+                                //margin-bottom: 5px;
                             }
     
                             &__calculation {
@@ -879,7 +875,7 @@
                                 flex-direction: row;
                                 justify-content: space-between;
                                 width: 30px;
-                                margin-bottom: 20px;
+                                //margin-bottom: 20px;
                             }
     
                             &__ellipse {
@@ -892,7 +888,7 @@
     
                             &__provide {
                                 text-align: center;
-                                margin-bottom: 20px;
+                                //margin-bottom: 20px;
     
                                 p {
                                     position: relative;
@@ -934,28 +930,13 @@
                                 font-size: 18px;
                                 font-weight: 600;
                                 line-height: normal;
-                                margin-bottom: 10px;
                             }
                         }
                     }
                 }
         
                 .slider-arrows {
-                    top: 227px;
-                    right: -10px;
-                    width: 100%;
-                    z-index: 4;
-        
-                    .prev {
-                        width: 55px;
-                        height: 55px;
-                    }
-        
-                    .next {
-                        display: block;
-                        width: 55px;
-                        height: 55px;
-                    }
+                    display: none;
                 }
             }
     
