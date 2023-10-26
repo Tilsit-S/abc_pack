@@ -78,7 +78,7 @@
         }
     
         &__list {
-            width: 688px;
+            width: 658px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -99,7 +99,11 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            width: 234px;
+            max-width: 202px;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
     
             span {
                 font-size: 48px;

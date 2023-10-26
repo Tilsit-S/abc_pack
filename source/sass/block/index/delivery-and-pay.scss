@@ -74,15 +74,15 @@
 
         &__item-link {
             display: block;
-            color: #FFF;
+            color: $white;
             font-size: 32px;
             font-weight: 600;
             line-height: 48px;
             padding-left: 90px;
             border-radius: 40px;
-            border: 2px solid #EF3C15;
-            background: #FFF;
-            color: #EF3C15;
+            border: 2px solid $red;
+            background: $white;
+            color: $red;
 
             span {
                 position: relative;
@@ -165,8 +165,8 @@
         }
 
         &__placeholder-input:checked ~ .item__item-link {
-            background-color: #EF3C15;
-            color: #FFF;
+            background-color: $red;
+            color: $white;
 
             span {
                 position: relative;
