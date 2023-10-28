@@ -141,7 +141,6 @@
                             line-height: 23px;
                             font-weight: 700;
                             color: $black;
-                            //margin-bottom: 10px;
 
                             @media (max-width: 1200px) {
                                 font-size: 15px;
@@ -154,7 +153,6 @@
                             line-height: normal;
                             text-transform: uppercase;
                             color: #EF3C15;
-                            //margin-bottom: 20px;
                         }
 
                         &__count {
@@ -163,10 +161,6 @@
                             font-weight: 400;
                             text-align: center;
                             color: $black;
-                        }
-
-                        &__calculation-wrapper {
-                            //margin-bottom: 5px;
                         }
 
                         &__calculation {
@@ -181,7 +175,6 @@
                             flex-direction: row;
                             justify-content: space-between;
                             width: 30px;
-                            //margin-bottom: 20px;
                         }
 
                         &__ellipse {
@@ -484,20 +477,26 @@
                 }
             }
         }
-
-        &__tabs-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            gap: 15px 0;
+        
+        .slick-slider{
+            width: 1300px;
             margin-bottom: 47px;
+        }
+        
+        /* Лента слайдов */
+        .slick-track{
+            display: flex;
+        }
+        /* Слайд */
+        .slick-slide,
+        .slick-current,
+        .slick-active {
+            margin-right: 30px;
         }
 
         &__tab {
             display: block;
             padding: 7px 18px;
-            margin-right: 30px;
             border-radius: 24px;
             border: 1px solid rgba(239, 60, 21, 0.30);
             background: $white;
@@ -737,6 +736,22 @@
                     }
                 }
             }
+
+            .slick-slider{
+                width: 700px;
+                //margin-bottom: 47px;
+            }
+            
+            /* Лента слайдов */
+            .slick-track{
+                display: flex;
+            }
+            /* Слайд */
+            .slick-slide,
+            .slick-current,
+            .slick-active {
+                margin-right: 16px;
+            }
     
             &__tabs-wrapper {
                 margin-bottom: 26px;
@@ -749,7 +764,6 @@
             &__tab {
                 padding: 5px 20px;
                 font-size: 16px;
-                margin-right: 11px;
 
                 @media (max-width: 680px) {
                     padding: 8px 10px;
