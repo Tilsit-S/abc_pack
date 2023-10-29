@@ -260,6 +260,11 @@
                         height: 20px;
                         top: 7px;
                         left: -43px;
+
+                        @media (max-width: 680px) {
+                            top: -1px;
+                            left: -25px;
+                        }
                     }
                 }
             }
@@ -375,7 +380,10 @@
 
                 span {
                     &::before {
+                        top: 3px;
                         left: -14px;
+                        width: 11px;
+                        height: 11px;
                     }
                 }
             }

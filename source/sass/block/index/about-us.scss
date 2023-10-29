@@ -189,7 +189,8 @@
             line-height: normal;
 
             @media (max-width: 680px) {
-                top: 210px;
+                //top: 210px;
+                top: 125px;
             }
         }
     
@@ -240,6 +241,10 @@
     
             &:nth-child(1) {
                 margin-top: 80px;
+
+                @media (max-width: 680px) {
+                    margin-top: 40px;
+                }
             }
     
             &:nth-child(2) {
