@@ -73,6 +73,13 @@
         border: 2px solid rgba(1, 180, 137, 0.26);
         background: #FFF;
         padding: 24px;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 5px 5px 5px 0 rgba(180,193,213,.32);
+            transform: translateY(-1px);
+            transition: all 0.3s;
+        }
 
         @media (max-width: 1600px) {
             width: 425px;

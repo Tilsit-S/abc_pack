@@ -237,7 +237,7 @@
         transition: all 500ms ease;
 
         &:hover {
-          background-color: $red;
+          background-color: transparent;
           color: $white;
           transition: all 500ms ease;
         }

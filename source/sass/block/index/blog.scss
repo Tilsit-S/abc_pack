@@ -56,6 +56,13 @@
         margin: 0 auto;
         border: 2px solid #EF3C15;
         cursor: pointer;
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+            transition: all 500ms ease;
+        }
 
         @media (max-width: 1600px) {
             left: 80px;
