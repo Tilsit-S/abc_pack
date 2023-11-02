@@ -93,6 +93,10 @@
             border-bottom: 1px solid #333;
             color: var(#828282);
             margin-bottom: 22px;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         &__user-phone {
@@ -104,6 +108,10 @@
             border-bottom: 1px solid #333;
             color: var(#828282);
             margin-bottom: 24px;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         &__checkbox-wrapper {
@@ -144,6 +152,13 @@
             border: none;
             border-radius: 32px;
             background: #EF3C15;
+            transition: all 500ms ease;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 4px 24px 0px $red;
+                transition: all 500ms ease;
+              }
         }
     }
 }

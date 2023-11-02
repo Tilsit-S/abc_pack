@@ -528,8 +528,14 @@
             text-align: center;
             margin: 0 auto;
             border: none;
-            box-shadow: 0px 4px 24px 0px rgba(239, 60, 21, 0.32);
             cursor: pointer;
+            transition: all 500ms ease;
+
+            &:hover {
+                color: $red;
+                box-shadow: 5px 5px 24px 5px rgba(239, 60, 21, 0.32);
+                transition: all 500ms ease;
+              }
 
             @media (max-width: 1200px) {
                 width: 430px;
