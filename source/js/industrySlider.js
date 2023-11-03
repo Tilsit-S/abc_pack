@@ -3,18 +3,25 @@ $(document).ready(function(){
         infinite: false,
         arrows: true,
         dots: true,
-        variableWidth: true,
-        slidesToShow: 3,
+        variableWidth: false,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 1530,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 },
             },
             {
-                breakpoint: 500,
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
